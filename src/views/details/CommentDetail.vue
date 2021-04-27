@@ -52,6 +52,7 @@ export default {
         axios.get(`https://jsonplaceholder.typicode.com/comments/${this.id}`)
             .then(res => this.data = res.data)
     },
+    //actions using vuex
     methods:{
         ...mapActions(["deleteComment","updateComment"]),
         deleteCOMMENT(id){
