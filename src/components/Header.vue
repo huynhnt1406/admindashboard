@@ -19,8 +19,7 @@
           <template #button-content>
             <em>User</em>
           </template>
-          <b-dropdown-item href="#">Profile</b-dropdown-item>
-          <b-dropdown-item href="#">Sign Out</b-dropdown-item>
+             <router-link class="m-2 text-secondary " to='/'>Login</router-link>
         </b-nav-item-dropdown>
       </b-navbar-nav>
     </b-collapse>

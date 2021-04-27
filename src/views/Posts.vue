@@ -31,6 +31,16 @@ export default {
     created(){
         this.fetchPosts()
     },
+    beforeRouteEnter(to, from ,next){
+        const uname = localStorage.getItem('username')
+        const pname = localStorage.getItem('password')
+        console.log(pname,uname);
+        if(uname !== null || pname !== null){
+            next()
+        }else{
+            next('/')
+        }
+    }
 }
 </script>
 
